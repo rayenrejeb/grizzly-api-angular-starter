@@ -38,7 +38,7 @@ export class ProductEditComponent implements OnInit {
       this.ps.updateProduct(ProductName, ProductDescription, ProductPrice, params.id)
       .subscribe(res => {
         console.log('Update Complete');
-        this.router.navigate(['app/products']);
+        this.router.navigate(['/products']);
       });
     });
   }
